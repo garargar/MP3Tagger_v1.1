@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="470.0" prefWidth="800.0" styleClass="AnchorPane-centre" stylesheets="@../resources/CustomStuff.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PrefController">
+   <children>
+      <Button fx:id="btnAdd" layoutX="111.0" layoutY="439.0" mnemonicParsing="false" onAction="#addDirectory" prefHeight="31.0" prefWidth="104.0" text="Add" />
+      <ListView fx:id="directories" layoutX="23.0" layoutY="139.0" prefHeight="241.0" prefWidth="401.0" />
+      <Button fx:id="btnBrowse" layoutX="324.0" layoutY="390.0" mnemonicParsing="false" onAction="#openFileDialogRead" prefHeight="31.0" prefWidth="89.0" text="Browse:" />
+      <TextField fx:id="txtfieldRead" layoutX="35.0" layoutY="390.0" prefHeight="31.0" prefWidth="276.0" />
+      <Button fx:id="btnRemove" layoutX="233.0" layoutY="439.0" mnemonicParsing="false" onAction="#removeDirectory" prefHeight="31.0" prefWidth="104.0" text="Remove" />
+      <TextField fx:id="txtfieldSave" layoutX="31.0" layoutY="45.0" prefHeight="31.0" prefWidth="348.0" promptText="(choose location)" />
+      <Button fx:id="btnBrowseSave" layoutX="387.0" layoutY="45.0" mnemonicParsing="false" onAction="#openFileDialogSave" text="..." />
+      <Label layoutX="37.0" layoutY="14.0" text="Move completed MP3's to:" />
+      <Label layoutX="37.0" layoutY="111.0" text="MP3 directories:" />
+   </children>
+</AnchorPane>

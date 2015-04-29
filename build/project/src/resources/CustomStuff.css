@@ -1,0 +1,57 @@
+.nav-buttons{
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center top;
+	-fx-background-size: 60 60;
+	
+	-fx-background-radius: 10 0 0 10;
+	
+	-fx-text-fill: white;
+	-fx-background-color:  rgb(129,128,128);
+	
+}
+
+.nav-buttons:focused {
+	-fx-background-color: rgb(97,97,97);
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+	-fx-effect: innershadow( gaussian , rgba(0,0,0,0.7) , 20,0,0,0 );
+}
+
+.nav-buttons:hover {	
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+	-fx-effect: innershadow( gaussian , rgba(0,0,0,0.7) , 20,0,0,0 );
+	
+}
+
+#btnPref {
+  	-fx-background-image: url('icon_gear.png');    	
+}
+
+#btnTags {
+  	-fx-background-image: url('icon_headphone.png');    	
+}
+
+.AnchorPane-top { 
+	-fx-background-color: rgb(88,88,88);
+}
+
+.AnchorPane-left { 
+	-fx-background-color: rgb(129,128,128);
+}
+
+.AnchorPane-centre {
+	-fx-background-color: rgb(219,219,219);
+}
+
+
+.list-cell:empty {
+    -fx-background-color: white;
+}
+
+#mp3HasTagCol {
+    -fx-alignment: center;
+    
+}
+
+.table-row-cell:empty {
+    -fx-background-color: white;
+}

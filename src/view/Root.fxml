@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" stylesheets="@../resources/CustomStuff.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RootController">
+   <left>
+      <AnchorPane prefHeight="506.0" prefWidth="126.0" styleClass="AnchorPane-left" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnTags" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="83.0" mnemonicParsing="false" onAction="#showTags" prefHeight="82.0" prefWidth="108.0" styleClass="nav-buttons" text="Tags">
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnPref" layoutX="23.0" layoutY="207.0" mnemonicParsing="false" onAction="#showPref" prefHeight="82.0" prefWidth="108.0" styleClass="nav-buttons" text="Preferences">
+               <padding>
+                  <Insets top="50.0" />
+               </padding></Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="94.0" prefWidth="1000.0" styleClass="AnchorPane-top" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="150.0" layoutY="29.0" prefHeight="36.0" prefWidth="194.0" text="MP3 Tag Editor" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Label>
+            <ImageView fitHeight="77.0" fitWidth="76.0" layoutX="27.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icon_folder.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
