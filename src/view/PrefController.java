@@ -34,7 +34,7 @@ public class PrefController {
 	private void initialize() {
 		refresh();
 
-		if(Variables.saveDirec.lastIndexOf("\\") == Variables.saveDirec.length() -1)
+		if(Variables.saveDirec.length() != 0 && Variables.saveDirec.lastIndexOf("\\") == Variables.saveDirec.length() -1)
 			txtfieldSave.setText(Variables.saveDirec.substring(0, Variables.saveDirec.length()-1));
 		else
 			txtfieldSave.setText(Variables.saveDirec);
