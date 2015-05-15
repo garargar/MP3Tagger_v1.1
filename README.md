@@ -31,3 +31,12 @@ Edits MP3 Tags -- Version 1.1
 +Application installer
 
 +More detailed MP3 info on board
+
+
+
+
+
+
+
+
+#####** Uses mp3agic library (http://github.com/mpatric/mp3agic)
