@@ -10,7 +10,7 @@ public class Variables {
 	public static ObservableList<String> directoryLst = FXCollections.observableArrayList();
 	public static ObservableList<Mp3Class> mp3Info = FXCollections.observableArrayList();
 	public static File currDirec = new File(System.getProperty("user.home") + "\\Desktop");
-	public static String saveDirec = System.getProperty("user.home") + "\\Desktop"; 
+	public static String saveDirec = System.getProperty("user.home") + "\\Desktop\\"; 
 	public static boolean changeIsChecked = false;
 }
 

@@ -121,8 +121,14 @@ public class MainApp extends Application {
     	try {     
     		input = new FileInputStream("preferences.properties");     
     		pref.load(input);
-     
-    		Variables.saveDirec = pref.getProperty("saveDirec");
+    		
+    		if(pref.getProperty("saveDirec").length() != 0){
+    			Variables.saveDirec = pref.getProperty("saveDirec");
+    		} else{
+    			Variables.saveDirec = System.getProperty("user.home") + "\\Desktop\\"; 
+    		}
+    		
+    		
     		Variables.changeIsChecked = Boolean.valueOf(pref.getProperty("changeCheckBoxState"));
     		
     		String direcLst = pref.getProperty("direcLst");
